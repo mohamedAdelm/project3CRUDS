@@ -1,0 +1,75 @@
+
+
+
+
+
+
+
+.getPrice{
+
+    width: 900px;
+}
+.getPrice input{
+    width: 150px;
+}
+
+
+input:focus{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    background-color: #000;
+    color: white;
+}
+
+
+span{
+    /* background-color: red; */
+    color: white;
+    padding: 3px;
+}
+.bg-totel{
+    background-color: red;
+    color: white;
+    
+    width: fit-content;
+}
+
+
+button{
+    background-color: rgb(3, 60, 34);
+    color: #000;
+    padding: 5px;
+    width: 100%;
+    border: none;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+}
+
+
+
+
+table th{
+    margin: 25px;
+}
+
+.mood{
+
+
+    border: none;
+    background-color: transparent;
+}
+.bg{
+
+    background-color: #044236;
+}
+
+
+.bg h1, .bg p,.bg svg.fa-moon{
+
+    color: white;
+}

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cruds</title>
+    <!-- fontowsame.css  -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <!-- bootstrap.css -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!-- style.css -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="text-center text-uppercase">
+      <h1>
+        cruds
+      </h1>
+      <button class="mood">
+        <i class="fa-solid fa-moon"></i><i class="fa-solid fa-sun"></i>
+      </button>
+      <p>product management sestem</p>
+    </div>
+
+    <div class="container bg-info-subtle py-5 my-5">
+      <form>
+        <div class="row">
+          <div class="col-md-12">
+            <input
+              type="text"
+              name="titel"
+              class="form-control"
+              placeholder="titel:"
+              id="titel"
+            />
+          </div>
+          <div class="col-md-12 mt-4">
+            <div class="row">
+              <div class="col-md-2">
+                <input
+                  onkeyup="getPriceProduct()"
+                  type="number"
+                  name="price"
+                  class="form-control"
+                  placeholder="price:"
+                  id="pric"
+                />
+              </div>
+              <div class="col-md-2">
+                <input
+                  onkeyup="getPriceProduct()"
+                  type="number"
+                  name="taxes"
+                  class="form-control"
+                  placeholder="taxes:"
+                  id="taxes"
+                />
+              </div>
+              <div class="col-md-2">
+                <input
+                  onkeyup="getPriceProduct()"
+                  type="number"
+                  name="ads"
+                  class="form-control"
+                  placeholder="ads:"
+                  id="ads"
+                />
+              </div>
+              <div class="col-md-3">
+                <input
+                  onkeyup="getPriceProduct()"
+                  type="number"
+                  name="discount"
+                  class="form-control"
+                  placeholder="discount:"
+                  id="discount"
+                />
+              </div>
+              <div class="col-md-3 mt-2 bg-totel">
+                totel: <span id="totel"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-12 mt-4">
+            <input
+              type="text"
+              name="count"
+              class="form-control"
+              placeholder="count:"
+              id="count"
+            />
+          </div>
+
+          <div class="col-md-12 mt-4">
+            <input
+              type="text"
+              name="category"
+              class="form-control"
+              placeholder="category:"
+              id="category"
+            />
+          </div>
+
+          <div class="col-md-12 mt-4">
+            <input
+              type="search"
+              name="search"
+              class="form-control"
+              placeholder="search:"
+              id="search"
+            />
+          </div>
+
+          <div class="col-md-12 mt-4">
+            <button
+              type="button    "
+              class="createProduct"
+              onclick="addProduct()"
+              class="  "
+            >
+              create product
+            </button>
+          </div>
+        </div>
+      </form>
+      <div class="btnSearch">
+        <div class="row">
+          <div class="col-md-6 mt-4">
+            <input
+              type="search"
+              onkeyup="searchByTitle(this.value)"
+              class="searchByTitle form-control"
+              placeholder="search by title"
+            />
+          </div>
+          <div class="col-md-6 mt-4">
+            <input
+              type="search"
+              onkeyup="searchByCatagory(this.value)"
+              class="searchByCatagory form-control"
+              placeholder="search by catagory"
+            />
+          </div>
+        </div>
+      </div>
+      <div class>
+        <div class="row">
+          <div class="col-md-12 mt-4 btnDeleteALL"></div>
+        </div>
+      </div>
+
+      <div class="container-fluid displayData">
+        <table class="w-100">
+          <thead>
+            <tr class="text-center">
+              <th>Id</th>
+
+              <th>titel</th>
+
+              <th>price</th>
+
+              <th>taxes</th>
+
+              <th>ads</th>
+              <th>discount</th>
+
+              <th>total</th>
+              <th>category</th>
+              <th>delete</th>
+              <th>update</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- fontowsame.js  -->
+    <script src="./js/all.min.js"></script>
+    <!-- bootstrap.js -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- style.js -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>
